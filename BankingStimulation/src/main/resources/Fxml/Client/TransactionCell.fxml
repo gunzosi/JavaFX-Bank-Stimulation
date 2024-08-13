@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="60.0" prefWidth="550.0" styleClass="cell_container" stylesheets="@../../Styles/TransactionCell.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.mazebank.Controllers.Client.TransactionCellController">
+    <VBox layoutY="-70.0" prefHeight="50.0" prefWidth="60.0" styleClass="trans_icon_container" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0">
+        <FontAwesomeIconView fx:id="in_icon" glyphName="LONG_ARROW_RIGHT" size="17" />
+        <FontAwesomeIconView fx:id="out_icon" glyphName="LONG_ARROW_LEFT" size="17" />
+    </VBox>
+    <Label fx:id="trans_date_lbl" layoutX="85.0" layoutY="22.0" styleClass="trans_date_lbl" text="2024-07-08" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="22.0" />
+    <Label fx:id="sender_lbl" layoutX="197.0" layoutY="22.0" styleClass="trans_pAddress_lbl" text="Derek" AnchorPane.leftAnchor="200.0" />
+    <Line endY="20.0" layoutX="310.0" layoutY="20.0" AnchorPane.leftAnchor="300.0" />
+    <Label fx:id="receiver_lbl" layoutX="351.0" layoutY="22.0" styleClass="trans_pAddress_lbl" text="Ocean" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="22.0" />
+    <Label fx:id="amount_lbl" layoutX="360.0" layoutY="32.0" styleClass="trans_amount_lbl" text="2000" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="20.0">
+        <graphic>
+          <FontAwesomeIconView glyphName="DOLLAR" styleClass="trans_amount_lbl" />
+        </graphic>
+    </Label>
+   <Button fx:id="message_btn" layoutX="446.0" layoutY="22.0" mnemonicParsing="false" styleClass="message_btn">
+      <graphic>
+         <FontAwesomeIconView glyphName="BELL" size="14" />
+      </graphic>
+   </Button>
+</AnchorPane>

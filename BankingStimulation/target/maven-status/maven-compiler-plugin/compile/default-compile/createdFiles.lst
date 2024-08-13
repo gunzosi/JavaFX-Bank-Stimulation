@@ -1,0 +1,8 @@
+com\jmc\mazebank\Controllers\Admin\AdminController.class
+com\jmc\mazebank\Controllers\LoginController.class
+module-info.class
+com\jmc\mazebank\Controllers\Client\ClientMenuController.class
+com\jmc\mazebank\Views\ViewFactory.class
+com\jmc\mazebank\App.class
+com\jmc\mazebank\Controllers\Client\ClientController.class
+com\jmc\mazebank\Models\Models.class
